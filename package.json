@@ -1,0 +1,29 @@
+{
+  "name": "my-personal-website",
+  "version": "1.0.0",
+  "description": "My Personal Website, where you can learn more about me.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i .\\tailwind.css -o .\\src\\css\\tailwind.css --watch"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https://github.com/gustavoalvesdev/my-personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoalvesdev/my-personal-website/issues"
+  },
+  "homepage": "https://github.com/gustavoalvesdev/my-personal-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
