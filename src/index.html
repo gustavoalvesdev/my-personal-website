@@ -5,39 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Alves - Site Pessoal</title>
-    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- <link rel="stylesheet" href="css/tailwind.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <header>
+    <header class="container mx-auto flex justify-between py-3">
+        <h1 class="text-xl text-red-600 font-bold">Gustavo &lt;/&gt; Alves</h1>
         <nav>
-            <h1 class="bg-red-500 text-white">Gustavo &lt;/&gt; Alves</h1>
     
-            <ul>
+            <ul class="flex gap-4">
                 <li>
-                    <a href="#">Home</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Projeto</a>
-                    <a href="#">Contato</a>
+                    <a href="#" class="p-3 hover:bg-red-400 hover:text-white transition-all duration-200" title="Home">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="p-3 hover:bg-red-400 hover:text-white transition-all duration-200" title="Serviço">Serviços</a>
+                </li>
+                <li>
+                    <a href="#" class="p-3 hover:bg-red-400 hover:text-white transition-all duration-200" title="Projetos">Projeto</a>
+                </li>
+                <li>
+                    <a href="#" class="p-3 hover:bg-red-400 hover:text-white transition-all duration-200" title="Contato">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <h2>Gustavo Alves</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab, totam tempora ducimus maxime sit, cupiditate nostrum at natus ipsa distinctio blanditiis dolore perferendis eos reiciendis facere laborum dignissimos ut?
-            </p>
-            <a href="#">ME CONTRATE</a>
-        </div>
-        <div>
-            <img src="#" alt="Banner Home">
-            <div>
-                <i>INSTA</i>
-                <i>LINKEDIN</i>
-                <i>GITHUB</i>
+    <main class="h-full">
+        <section class="bg-gradient-to-r from-slate-400 to-slate-200 py-6 h-1/4">
+            <div class="container mx-auto flex justify-between">
+                <div class="w-1/2 flex flex-col justify-center">
+                    <h2 class="text-4xl text-white font-bold mb-3">Gustavo Alves</h2>
+                    <p class="text-lg text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab, totam tempora ducimus maxime sit, cupiditate nostrum at natus ipsa distinctio blanditiis dolore perferendis eos reiciendis facere laborum dignissimos ut?
+                    </p>
+                    <a href="#" class="bg-red-600 text-white px-4 py-2 w-1/3 text-center text-xl mt-4 hover:bg-red-700 rounded-md transition-all duration-200">ME CONTRATE</a>
+                </div>
+                <div class="relative">
+                    <img src="img/image.jpg" alt="Banner Home" class="h-96 w-full object-cover">
+                    <div class="absolute bottom-0 right-0 pr-8 pb-8 flex flex-col gap-y-6">
+                        <a href="#" class="bg-rose-400 p-2 rounded-mdp-2 rounded-md"><i data-feather="instagram" class="text-white w-8 h-8"></i></a>
+                        <a href="#" class="bg-sky-500 p-2 rounded-mdp-2 rounded-md"><i data-feather="linkedin" class="text-white w-8 h-8"></i></a>
+                        <a href="#" class="bg-orange-300 p-2 rounded-md"><i data-feather="github" class="text-white w-8 h-8"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
         <div>
             <img src="#" alt="Logo empresa 01">
             <img src="#" alt="Logo empresa 02">
@@ -82,5 +95,9 @@
             <a href="#">+55 11 99653-1308</a>
         </div>
     </footer>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
